@@ -35,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
 
         btnAdd = findViewById(R.id.btnAdd);
         etItem = findViewById(R.id.etItem);
+        etItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Your name", Toast.LENGTH_SHORT).show();
+            }
+        });
         rvItems = findViewById(R.id.rvItems);
 
         loadItems();
